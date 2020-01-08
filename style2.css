@@ -1,46 +1,45 @@
 body {
-    background-color: #c3cfe2;
+	background-color: #c3cfe2;
 }
 .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 10px 10px;
-    justify-items: center;
-
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 10px 10px;
+	justify-items: center;
+}
+.button {
+	background-color: darkslategray;
+	color: white;
+	text-align: center;
+	font-size: 16px;
+	width: auto;
 }
 
 .container div {
-    content: url(bigBird.jpg);
-    /* background-color: darkslategray; */
-    background-repeat: no-repeat;
-    padding: 10px;
-    height: 200px;
-    width: 200px;
-    display: grid;
+	content: url(bigBird.jpg);
+	background-color: slategray;
+	padding: 3px;
+	max-width: 90%;
+	height: auto;
+	display: grid;
 }
 
-/* .container:nth-child(2):hover{
-    background-color: darkslategray;
-} */
-
- div.photo:hover {
-     display: none;
- }
+.container div:hover {
+	background-color: slategray;
+	content: none;
+}
 
 @media only screen and (min-width: 640px) {
-    .container {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+	.container {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
 }
-
 
 @media only screen and (min-width: 1000px) {
-    .container {
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-    }
+	.container {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
 }
-
-
